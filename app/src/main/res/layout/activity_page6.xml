@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_page6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dewo.quiz2.Page6Activity">
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="#E53935"
+        android:text="Pertanyaan 5"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#E53935"
+        android:text="Apa nama obat untuk membunuh jentik-jentik nyamuk di air"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp">
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_abate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abate"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_kina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kina"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_parcok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Param Kocok"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Simpan"
+        android:textColor="@android:color/white"
+        android:background="#E53935"
+        android:id="@+id/btnSimpanNama"
+        android:onClick="simpanNama"/>
+
+
+</RelativeLayout>
